@@ -1,33 +1,20 @@
-package Exer.swingComponets;
-
-import javax.swing.JPanel;
-
-import SwingComponets.AbstractMyFrame;
+package MultiplesComponents;
 import java.awt.event.*;
 import java.awt.*;
-
-import java.beans.*;
-
-import javax.swing.AbstractButton;
-import javax.swing.ButtonGroup;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JLabel;
-import javax.swing.JRadioButton;
-import javax.swing.JScrollBar;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
+// import java.beans.*;
+import javax.swing.*;
 
 public class ExerSwing {
     public static void main(String[] args) {
-        new MyFrame();
+        new MyFrame().setVisible(true);;
     }
 }
 
-class MyFrame extends AbstractMyFrame{
+class MyFrame extends JFrame{
     MyFrame(){
-        super();
+        setBounds(200, 150, 700, 400);
+         setDefaultCloseOperation(EXIT_ON_CLOSE);
+         // setVisible(true);!!
         add(new MyPanel());
     }
 }
